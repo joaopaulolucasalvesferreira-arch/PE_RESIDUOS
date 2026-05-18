@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bg: #99deaa;
+    --primary: #084902;
+    --accent: #2e7d32;
+    --light: #ffffff;
+    --dark: #1b1b1b;
+}
+
+/* BODY */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, var(--bg) 0%, #ffffff 70%);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header{
+    background-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.secao-topo{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.topo-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-logo-topo{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.title-topo{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.links-topo{
+    display: flex;
+    gap: 15px;
+}
+
+.links-topo a{
+    color: white;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.links-topo a:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* TÍTULOS */
+.subtitle{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+/* SEÇÃO VÍDEO */
+.como-descartar{
+    text-align: center;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-container video{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TEXTO */
+.descricao-video{
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* BOTÕES */
+button{
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #1b5e20;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 768px){
+
+    .secao-topo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links-topo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subtitle{
+        font-size: 1.5rem;
+    }
+
+    .video-container video{
+        width: 100%;
+    }
+}
